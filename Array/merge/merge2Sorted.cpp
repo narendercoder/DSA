@@ -18,7 +18,7 @@ using namespace std;
         nums3[k++] = nums1[i++];
     }
 
-    //cpoy second vector remaining element
+    //copy second vector remaining element
     while(j<m){
         nums2[k++] = nums2[j++];
     }
