@@ -49,7 +49,7 @@ vector<int> findAllDuplicates1(vector<int> &nums)
     vector<int> ans;
     int n = nums.size();
 
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < i; j++)
         {
@@ -70,7 +70,7 @@ vector<int> findAllDuplicates2(vector<int> &nums)
     vector<int> ans;
     int n = nums.size();
     sort(nums.begin(), nums.end());
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n; i++)
     {
         if (nums[i] == nums[i + 1])
             ans.push_back(abs(nums[i]));
