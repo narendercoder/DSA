@@ -1,19 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 // *find single
 //  Tortoise and Hare Algo:
 int findDuplicate1(vector<int> &nums)
 {
+    //start a fast and slow pointer
+    //until they meet
     int slow = nums[0];
     int fast = nums[0];
-
     do
     {
         slow = nums[slow];
         fast = nums[nums[fast]];
     } while (slow != fast);
-
+     
+     //as soon as they meet, move both
+     //pointers at same speed until they
+     //meet again 
     fast = nums[0];
     while (slow != fast)
     {
